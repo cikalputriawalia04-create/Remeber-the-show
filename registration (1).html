@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Nostalgia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo net.webp">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo net.webp" alt="logo">
+            <div class="logo-text">
+                <h1>Net Nostalgia </h1>
+                <p>Remember the Shows, Relive the Moments</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="net">
+            <li class="nav-item"><a href="index.html" class="nav-link"> Home</a></li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link"> About <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="sejarah.html"> Sejarah</a></li>
+                    <li><a href="visi-dan-misi.html"> Visi & Misi</a></li>
+                    <li><a href="tujuan.html"> Tujuan</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link"> Gallery</a></li>
+            <li class="nav-item active"><a href="registration.html" class="nav-link"></i> Registration</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <h2 class="section-title">Formulir Konstribusi</h2>
+            <form onsubmit="handleRegistration(event)">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" class="form-control" required placeholder="Masukkan nama lengkap">
+                </div>
+                <div class="form-group">
+                    <label>Alamat Email</label>
+                    <input type="email" class="form-control" required placeholder="nama@email.com">
+                </div>
+                <div class="form-group">
+        <label>Program Favorit</label>
+        <select class="form-control" required>
+            <option value="">Pilih program favorit</option>
+            <option>To Night Show</option>
+            <option>Breakout</option>
+            <option>Talkshow</option>
+            <option>Tetangga Masa Gitu</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Tahun Kenangan</label>
+        <input type="number" class="form-control"
+        placeholder="Contoh: 2018">
+    </div>
+
+    <div class="form-group">
+        <label>Cerita atau Kenangan</label>
+        <textarea class="form-control" rows="5"
+        placeholder="Ceritakan kenangan kamu tentang acara tersebut..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Unggah Dokumentasi</label>
+        <input type="file" class="form-control"
+        accept="image/*">
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" required>
+        Saya bersedia membagikan cerita dan dokumentasi
+        untuk keperluan arsip NET Nostalgia.
+    </div>
+
+                <button type="submit" class="btn-submit"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+            </form>
+        </main>
+
+        <aside>
+            <div class="widget clock-widget">
+                <div id="clock">00:00:00</div>
+                <div id="date">Loading...</div>
+            </div>
+            <div class="widget">
+                <h3 class="widget-title"><i class="fa-solid fa-video"></i> Video Nostalgia</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/CC5gkjVTeQ4?si=CYDxPZYantQclWpL" title="YouTube video" allowfullscreen></iframe>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Net Nostalgia. All Rights Reserved.</p>
+        <p>Design by <strong>Developer</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
